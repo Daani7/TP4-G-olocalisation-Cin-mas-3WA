@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche de cinémas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/main.js" defer></script>
+</head>
+<body>
+    <h1>Cinémas proches de chez vous</h1>
+    <form id="cinema-search-form">
+        <button type="button" id="geolocation-button">Me géolocaliser</button>
+        
+        <label for="address">Adresse:</label>
+        <input type="search" id="address" placeholder="Entrez une adresse" required>
+        
+        <label for="distance">Distance en km:</label>
+        <input type="range" id="distance" min="1" max="50" value="10">
+        <span id="distance-value">10 km</span>
+
+        <button type="submit">Rechercher</button>
+    </form>
+    <ul id="cinema-list"></ul>
+</body>
+</html>
